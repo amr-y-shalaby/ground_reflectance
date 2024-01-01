@@ -41,10 +41,20 @@ example, a surface has 60% Reflectance as it reflects 60% of all incident radiat
 
 ρ = ( Reflected Irradiance ) ÷ ( Incident Irradiation ) =  ( π x Radiance ) / ( Incident Irradiation )
 
+# §4. Raster Calculate to Convert Digital Number to Reflectance
+Utilizing Python's [https://rasterio.readthedocs.io/en/stable/](RasterIO Library) to convert the recorded Digital Number (DN) or Brightness Value (BV) from 0 to 255 in the stored 8-bit scale to a Percentage Value.  The latter is achieved vai the function [https://github.com/amr-y-shalaby/ground_reflectance/blob/main/Python/preprocessor.py#L113-L31](compute_reflectance) via the equation
 
+ρ = ( Reflected Irradiance ) ÷ ( Incident Irradiation )
 
+ρ = ( π x Radiance ) / ( Incident Irradiation )
 
+ρ = ( π x { (L<sub>total</sub) - L<sub>path_radiance</sub>) } / ( Solar Irradiation )
 
+where 
+
+Solar Irradiation =  E x T = E<sub>0</sub> Cosine(θ<sub>s</sub>)
+E<sub>0</sub> is Solar Irradiance at the top of the atmosphere
+θ<sub>s</sub> is the Solar Zenith Angle
 
 
 
