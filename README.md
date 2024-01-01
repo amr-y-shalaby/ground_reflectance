@@ -23,6 +23,8 @@ of band **3** of the Landsat TM4 sensor, it is acquired on day 034, 2010. The im
 
 # §2. Landsat 7 Channel 4 (Near Infrared) Coefficients
 
+Channel 4 coefficients are stored as ASCII in the downloaded meta-data from Landsat 7 data source data source http://earthexplorer.usgs.gov/, and in turn, stored in the [Config.ini](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/Python/config.ini#L12-L20) File.
+
 | Coefficient             |  Value   |                      Units                      |                                   Description                                    |
 |-------------------------|:--------:|:-----------------------------------------------:|:--------------------------------------------------------------------------------:|
 | Offset                  |  -4.50   | W m<sup>-2</sup> μm<sup>-1</sup>sr<sup>-1</sup> |                 Radiant Flux Per Unit Wavelength Per Solid Angle                 |
