@@ -59,5 +59,3 @@ E<sub>0</sub> is Solar Irradiance at the top of the atmosphere
 
 
 
-
-
