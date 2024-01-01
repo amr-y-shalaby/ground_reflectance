@@ -1,8 +1,10 @@
 <!-- TOC -->
-
-* [§0. Prelude](#0-prelude-)
-* [Raw Toronto Image](#raw-toronto-image)
-
+* [§0. Prelude](#0-prelude)
+* [§1. Raw Toronto Image](#1-raw-toronto-image)
+* [§2. Landsat 7 Channel 4 (Near Infrared) Coefficients](#2-landsat-7-channel-4-near-infrared-coefficients)
+* [§3. Deriving Irradiance For Incident Radiation](#3-deriving-irradiance-for-incident-radiation)
+* [§4. Raster Calculator to Convert Digital Number (DN) to Reflectance](#4-raster-calculator-to-convert-digital-number-dn-to-reflectance)
+* [§5. Ground Reflectance Output](#5-ground-reflectance-output)
 <!-- TOC -->
 
 # §0. Prelude
@@ -19,7 +21,10 @@ convention used, for example, “LT40250112010034EDC00_B3.TIF” indicates that 
 of band **3** of the Landsat TM4 sensor, it is acquired on day 034, 2010. The image is located on path
 025, row 011 of the Global Landsat coordinates.
 
-![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/Toronto_band4_Near_IR.png "Landsat 7 in Near Infrared")
+![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/Toronto_band4_Near_IR.png "Toronto Original Image in Near Infrared")
+
+![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/toronto_original_image_histogram.png "Toronto Original DN Histogram")
+
 
 # §2. Landsat 7 Channel 4 (Near Infrared) Coefficients
 
@@ -61,5 +66,12 @@ E<sub>0</sub> is Solar Irradiance at the top of the atmosphere
 
 θ<sub>s</sub> is the Solar Zenith Angle
 
+# §5. Ground Reflectance Output
+
+Observe that the Digital Numbers are no longer distributed between [ 0, 255 ] but between [ 0, 1] depending on surface type.  Because of the predominance of the _Water Surface_ which absorbs radiation, there is a pronounced peak near a reflectance of " 0 ".
+
+![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/toronto_ground_reflectance.png "Toronto Reflectance  in Near Infrared")
+
+![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/toronto_ground_reflectance_histogram.png "Toronto Ground Reflectance Histogram")
 
 
