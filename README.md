@@ -19,7 +19,7 @@ convention used, for example, “LT40250112010034EDC00_B3.TIF” indicates that 
 of band **3** of the Landsat TM4 sensor, it is acquired on day 034, 2010. The image is located on path
 025, row 011 of the Global Landsat coordinates.
 
-![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/Data/Toronto_band4_Near_IR.png "Landsat 7 in Near Infrared")
+![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/Toronto_band4_Near_IR.png "Landsat 7 in Near Infrared")
 
 # §2. Landsat 7 Channel 4 (Near Infrared) Coefficients
 
@@ -41,7 +41,7 @@ example, a surface has 60% Reflectance as it reflects 60% of all incident radiat
 
 ρ = ( Reflected Irradiance ) ÷ ( Incident Irradiation ) =  ( π x Radiance ) / ( Incident Irradiation )
 
-# §4. Raster Calculate to Convert Digital Number to Reflectance
+# §4. Raster Calculator to Convert Digital Number (DN) to Reflectance
 Utilizing Python's [RasterIO Library]([https://rasterio.readthedocs.io/en/stable/) to convert the recorded Digital Number (DN) or Brightness Value (BV) from 0 to 255 in the stored 8-bit scale to a Percentage Value.  
 The latter is achieved vai the function [compute_reflectance](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/Python/preprocessor.py#L113-L131) via the equation
 
