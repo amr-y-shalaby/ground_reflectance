@@ -19,6 +19,8 @@ convention used, for example, “LT40250112010034EDC00_B3.TIF” indicates that 
 of band **3** of the Landsat TM4 sensor, it is acquired on day 034, 2010. The image is located on path
 025, row 011 of the Global Landsat coordinates.
 
+![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/Data/Toronto_band4_Near_IR.png "Landsat 7 in Near Infrared")
+
 # §2. Landsat 7 Channel 4 (Near Infrared) Coefficients
 
 | Coefficient             |  Value   |                      Units                      |                                   Description                                    |
