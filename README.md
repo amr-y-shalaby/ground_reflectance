@@ -54,7 +54,9 @@ The latter is achieved vai the function [compute_reflectance](https://github.com
 where 
 
 Solar Irradiation =  E x T = E<sub>0</sub> Cosine(θ<sub>s</sub>)
+
 E<sub>0</sub> is Solar Irradiance at the top of the atmosphere
+
 θ<sub>s</sub> is the Solar Zenith Angle
 
 
