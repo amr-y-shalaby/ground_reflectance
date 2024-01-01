@@ -46,9 +46,9 @@ Utilizing Python's [https://rasterio.readthedocs.io/en/stable/](RasterIO Library
 
 ρ = ( Reflected Irradiance ) ÷ ( Incident Irradiation )
 
-ρ = ( π x Radiance ) / ( Incident Irradiation )
+ρ = ( π x Radiance ) ÷ ( Incident Irradiation )
 
-ρ = ( π x { (L<sub>total</sub) - L<sub>path_radiance</sub>) } / ( Solar Irradiation )
+ρ = ( π x { (L<sub>total</sub) - L<sub>path_radiance</sub>) } ÷ ( Solar Irradiation )
 
 where 
 
