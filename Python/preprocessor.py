@@ -125,6 +125,9 @@ def compute_reflectance(satellite_image: str):
 
 compute_reflectance(satellite_image_dict['satellite_image'])
 toronto_reflectance_img = rasterio.open(parent_dir + '/Data/toronto_reflectance.tif')
+toronto_original_img = rasterio.open(parent_dir + '/Data/toronto_2011_band4.tif')
+
+show_hist(toronto_original_img, title="Toronto Original Image using Landsat 7 TM4 Instrument")
 
 show(toronto_reflectance_img, title="Ground Reflectance Histogram of LANDSAT 7 Satellite")
 show_hist(toronto_reflectance_img, lw=0.0, stacked=False, alpha=0.3, histtype='stepfilled'\
