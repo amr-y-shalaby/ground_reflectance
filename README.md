@@ -5,6 +5,7 @@
 * [§3. Deriving Irradiance For Incident Radiation](#3-deriving-irradiance-for-incident-radiation)
 * [§4. Raster Calculator to Convert Digital Number (DN) to Reflectance](#4-raster-calculator-to-convert-digital-number-dn-to-reflectance)
 * [§5. Ground Reflectance Output](#5-ground-reflectance-output)
+* [§6. Sample Reflectance Calculator](#6-sample-reflectance-calculator)
 <!-- TOC -->
 
 # §0. Prelude
@@ -73,5 +74,10 @@ Observe that the Digital Numbers are no longer distributed between [ 0, 255 ] bu
 ![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/toronto_ground_reflectance.png "Toronto Reflectance  in Near Infrared")
 
 ![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/toronto_ground_reflectance_histogram.png "Toronto Ground Reflectance Histogram")
+
+# §6. Sample Reflectance Calculator
+
+The Excel file, [reflectance_sample_calculator.xlsx](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/reflectance_sample_calculator.xlsx), has been attached to demonstrate per-pixel calculation.
+
 
 
