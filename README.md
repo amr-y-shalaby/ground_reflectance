@@ -49,7 +49,7 @@ The latter is achieved vai the function [compute_reflectance](https://github.com
 
 ρ = ( π x Radiance ) ÷ ( Incident Irradiation )
 
-ρ = ( π x { (L<sub>total</sub) - L<sub>path_radiance</sub>) } ÷ ( Solar Irradiation )
+ρ = ( π x { (L<sub>total</sub>) - L<sub>path_radiance</sub>) } ÷ ( Solar Irradiation )
 
 where 
 
