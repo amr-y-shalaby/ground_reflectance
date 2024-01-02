@@ -1,5 +1,6 @@
 <!-- TOC -->
 * [§0. Prelude](#0-prelude)
+* [§0.1 Python Requirements](#01-python-requirements)
 * [§1. Raw Toronto Image](#1-raw-toronto-image)
 * [§2. Landsat 7 Channel 4 (Near Infrared) Coefficients](#2-landsat-7-channel-4-near-infrared-coefficients)
 * [§3. Deriving Irradiance For Incident Radiation](#3-deriving-irradiance-for-incident-radiation)
@@ -14,6 +15,16 @@ In order to accurately classify surface types within a satellite image, it is im
 Values first from the Digital Numbers (DN) or Brightness Values. The underlying reason is each surface type reflects
 radiation in very specific thresholds. For example, water absorbs most incident solar radiation with a reflectance of
 near 0%. Clouds appear very right at nearly 80% as it reflects most incident solar radiation.
+
+# §0.1 Python Requirements
+
+The needed Python packages are specified in [requirements.txt](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/requirements.txt) which are as follows:
+
+* SQLAlchemy~=2.0.23
+* rasterio~=1.3.9
+* numpy~=1.26.1
+* Pillow~=10.1.0
+
 
 # §1. Raw Toronto Image
 
@@ -81,6 +92,3 @@ Observe that the Digital Numbers are no longer distributed between [ 0, 255 ] bu
 # §6. Sample Reflectance Calculator
 
 The Excel file, [reflectance_sample_calculator.xlsx](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/reflectance_sample_calculator.xlsx), has been attached to demonstrate per-pixel calculation.
-
-
-
