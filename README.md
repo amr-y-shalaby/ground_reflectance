@@ -75,6 +75,9 @@ Observe that the Digital Numbers are no longer distributed between [ 0, 255 ] bu
 
 ![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/toronto_ground_reflectance_histogram.png "Toronto Ground Reflectance Histogram")
 
+![](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/toronto_original_vs_reflectance.png "Toronto Original vs Reflectance Range")
+
+
 # §6. Sample Reflectance Calculator
 
 The Excel file, [reflectance_sample_calculator.xlsx](https://github.com/amr-y-shalaby/ground_reflectance/blob/main/output/reflectance_sample_calculator.xlsx), has been attached to demonstrate per-pixel calculation.
